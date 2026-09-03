@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    prod
+
+logging:
+  level:
+    root: WARN
+    com.example.orchestrator: INFO
+    com.hibernate.SQL: ERROR
+    com.springframework: ERROR

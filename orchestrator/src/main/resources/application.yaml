@@ -1,3 +1,17 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api/v1
+
 spring:
   application:
     name: orchestrator
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+
+  flyway:
+    enabled: true
+    locations: classpath:db/migration

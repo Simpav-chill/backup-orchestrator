@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    dev
+
+logging:
+  level:
+    root: INFO
+    com.example.orchestrator: DEBUG
+    com.springframework: WARN
