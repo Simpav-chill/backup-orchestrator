@@ -8,7 +8,7 @@ CREATE TABLE users (
 
 CREATE TABLE storage_nodes (
     id BIGSERIAL PRIMARY KEY,
-    username VARCHAR(255) UNIQUE NOT NULL,
+    name VARCHAR(255) UNIQUE NOT NULL,
     base_url VARCHAR(500) NOT NULL,
     status VARCHAR(20) NOT NULL DEFAULT 'ACTIVE',
     last_health_check_at TIMESTAMP,
