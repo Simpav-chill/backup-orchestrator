@@ -25,6 +25,8 @@ public class SecurityConfig {
     ) throws Exception {
 
         return http
+                .formLogin(form -> form.disable())
+                .httpBasic(basic -> basic.disable())
                 .csrf(csrf -> csrf.disable())
                 .sessionManagement(session ->
                         session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
