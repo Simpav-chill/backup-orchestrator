@@ -22,7 +22,7 @@ public class RestAccessDeniedHandler implements AccessDeniedHandler {
         response.setContentType("application/problem+json");
 
         String json = """
-                                {
+                {
                   "type": "about:blank",
                   "title": "Forbidden",
                   "status": 403,
